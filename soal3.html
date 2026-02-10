@@ -2,96 +2,227 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Latihan2</title>
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Latihan 3</title>
 </head>
 <body>
-  <font face="verdana" size="3">
-    <center><h1>Apple's iPhone 5c isn't the low-cost phone you've been waiting for</h1></center>
-  </font>
-  <center><img src="Bahan2.png" width="400"></center>
-  <justify><br><p><b>The iphone 5c,</b> simply put, is for those who've grown numb to Apple's lagery evolutionary
-  takes on its primary Iphone range. It'II attract a younger audience taht cares less about finely
-  Beveled edges and more about playing <i><a href="https://www.engadget.com/2013-09-10-iphone-5s-and-5c-cases.html">Connect 4 on their iPhone case.</a></i> It'II cater to the same
-  <span style="color: greenyellow;"><i>crowd that has looked</i></span> longingly towards the $599 (again, off-contract) <a href="https://www.engadget.com/2013-08-05-motorola-moto-x-review.html">
-  Moto X --</a> a Phone for the mainstream, and a phone that's as colorful as one's soul. In a way. this is the anti-Moto X. From a price, spec and feature perspective, it's a match that's
-  too close to call. The iPhone 5c's camera <span style="color: red;">has</span> an edge on the <span style="color: red;">Moto X</span>, but the X's Active Display is a boon for notifications. As these things
-  tend to go, a lot of it boils down to ecosystem preference. The iPhone 5c is being built for thesame audience as the <a href="https://www.engadget.com/2010-09-07-ipod-nano-review-2010.html">flashy iPod nano</a>, and moreover, Apple built it for those on 
-  <u>Wall Street</u> who feel that it simply must attract new markets to stay atop its game.</p></justify>
+  <font face="Arial" style="color: orange;"> 
+  <h1><center>Create a Sticky Note Effect in 5
+  Easy Steps With CSS3 and HTML5</center></h1></font>
   <hr>
-  Apple never showed intentions of racing the <b><u>Nexus 7</u></b> to the bottom in the tablet game, and the
-  <b>iPhone 5c</b> is proof that it won't do that in the phone arena, either.
-  <br><p style="font-size:small;"><i>Infographic by Troy Dunham for Engadget</i></p>
+  <p> by <a href="https://tutsplus.com/authors/christian-heilmann"> Chris Heilman</a> 27 Jan 2021
+  <br> <span style="color: gray;">Difficulty</span>:<I>Intermediate</I> <span style="color: gray;">Length</span>
+  :Medium <span style="color: gray;">Languages</span>:<select><option>Indonesia</option></select></p>
+  <center><img src="Bahan3.png" width="400"></center>
+  <p>In this tutorial, you'll learn how to transform an HTML list into a wall of "sticky
+  notes" that look and work like the following:
+  The effect is built up gradually and works on all up-to-date browsers like
+  Chrome, Safari, Firefox, and Opera. Older browsers simply get some yellow
+  squares.
   <br>
-  <table width="100%" border="1">
-    <tr>
-      <td rowspan="2" style="background-color: purple;">No</td>
-      <td colspan="2" style="background-color: orange;">Nama Lengkap</td>
-      <td colspan="3" style="background-color: green;">Tunjangan</td>
-      <td rowspan="2" style="background-color: blue;">Gajih</td>
-      <td rowspan="2" style="background-color: black; color: white;">Total</td>
-    </tr>
-    <tr>
-      <td>Depan</td>
-      <td>Belakang</td>
-      <td>Anak</td>
-      <td>Istri</td>
-      <td>Transport</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td colspan="8" style="background-color: gray;"><center>TOTAL</center></td>
-    </tr>
-  </table>
-  <br>
-  <table width="50%" border="1">
-    <tr>
-      <td colspan="3" style="background-color: purple"><center>Form Input Siswa</center></td>
-    </tr>
-    <tr>
-      <td style="background-color: orange;">Nama</td>
-      <td>:</td>
-      <td><input type="text" name="nama"></td>
-    </tr>
-    <tr>
-      <td style="background-color: green;">Tempat Lahir</td>
-      <td>:</td>
-      <td><input type="text" name="tempat_lahir"></td>
-    </tr>
-    <tr>
-      <td rowspan="2" style="background-color: yellow;">Jenis Kelamin</td>
-      <td rowspan="2">:</td>
-      <td><input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki<br>
-    </tr>
-    <tr>
-      <td><input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan</td>
-    </tr>
-    <tr>
-      <td style="background-color: blue;">kelas</td>
-      <td>:</td>
-      <td><select><option>X PPLG 2</option></select></td>
-    </tr>
-    <tr>
-      <td rowspan="2" style="background-color: black; color: white;">Alamat</td>
-      <td rowspan="2">:</td>
-      <td rowspan="2" height="50"><input type="text" name="alamat"></td>
-    </tr>
-    <tr>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td><input type="submit" value="Submit"></td>
-    </tr>
-  </table>
+  <ol type="1">
+    <li>Step 1: The HTML and Basic Squares</li>
+    We will be using some common CSS properties that work across all
+    browsers. As we are using HTML5 for the effect, the basic HTML of our
+    sticky notes is an unordered list with a link containing all the other
+    <li>Step 2: Drop Shadows and Scribbly Font
+    Now it's time to add a drop shadow to the notes to make them stand out and
+    to use a scribbly, hand-written font as the note font. For this we use <a href="https://fonts.google.com/">Google Fonts</a>
+     and the fonts they provide us with, called "Reenie Beanie" and "Lato".
+    </li>
+    <li>Step 3: Tilting the Notes</li>
+    Both the tilting of the notes and the zooming we'll add in the next step were
+    already explained in the past, <a href="https://zurb.com/playground/css3-polaroids">in this article by zurb</a> So big thanks to them
+    for publishing this trick.
+  </ol>
+  In order to tilt an element, you use the <a href="file:///C:/Users/DELL/Downloads/Test%20Praktek%20Pemrograman%201.pdf"><dev style="border: 2px solid #ddd;">
+  transform:rotate </dev>property of CSS3</a>,
+  again addiing the prefix for each of the browsers:
+</p>
+<hr>
+<center><img src="bahan5(2).png" width="400"></center>
+Apple never showed intentions of racing the <b><u>Nexus 7</u></b> to the bottom in the tablet game, and the
+<b>iPhone 5c</b> is proof that it won't do that in the phone arena, either.
+<br><p style="font-size:small;"><i>Infographic by Troy Dunham for Engadget</i></p>
+<p>Kebudayaan Indonesia yang multikultur seperti itu, ketika dikaji dari sisi dimensi waktu, dapat
+  dibagi pula pengertiannya :
+  <ol type="1">
+    <li>Pertama, kebudayaan (Indonesia) adalah kebudayaan yang sudah terbentuk.</li>
+    <li>Kedua, kebudayaan (Indonesia) adalah kebudayaan yang sedang membentuk. </li>
+    <li>Ketiga, adalah kebudayaan (Indonesia) adalah kebudayaan yang direncanakan untuk
+    dibentuk</li>
+  </ol>
+</p>
+<a href="https://ruangarsitek.com/cara-membuat-denah-rumah/#7_Lakukan_Uji_Coba_dan_Buat_Altenatif_Denah_Rumah">
+<font face="Arial" style="color: orange;">
+<p>
+  <ol type="A">
+    <li> 10 Cara Membuat Denah Rumah Minimalis
+      <ol type="1">
+        <li>
+        Cara Membuat Denah Rumah Minimalis
+        </li>
+        <li>
+        Karakteristik Membuat Denah Rumah yang Ideal
+        </li>
+        <li>
+        Memilih Model Rumah (Jumlah Lantai)
+        </li>
+        <li>
+        Mengumpulkan Inspirasi dan Referensi
+        </li>
+        <li>
+        Buat Program Ruang untuk Denah Rumah
+        </li>
+        <li>
+        Mulai Membuat Sketsa Denah Rumah dengan Garis
+        </li>
+        <li>
+        Berikan Detail Denah Rumah dan Mulai Penataan Perabot pada Denah Rumah
+        </li>
+        <li>
+        Lakukan Uji Coba dan Buat Altenatif Denah Rumah
+        </li>
+        <li>
+        Evaluasi Kembali Denah Rumah yang Telah Kamu Buat
+        </li>
+        <li>
+        Alternatif Denah Rumah Terbaik
+        </li>
+        <li>
+        Membuat Denah dengan Aplikasi Autocad
+        </li>
+      </ol>
+    </li>
+    <li>
+      Langkah-Langkah Membuat Denah Rumah
+    <ol type="1">
+      <li>Membuat Daftar Aktivitas</li>
+      <li>Menentukan Jumlah Ruangan</li>
+      <li>Mengukur Lahan</li>
+      <li>Mulai Membuat Denah Rumah</li>
+      <li>Menggambar Secara Spesifik Jendela dan Pintu</li>
+      <li>Memberi Nama Setiap Ruangan</li>
+      <li>Menggambar Furnitur Sesuai Letaknya</li>
+    </li>
+    </ol>
+  </ol>
+</p></font></a>
+<table width="100%" border="1">
+  <tr>
+  <td colspan="3" style="background-color:green;"><center><b style="color: white;">FEEDBACK</center></b></td>
+  </tr>
+  <tr>
+  <td style="background-color: rgb(255, 145, 0);">Nama</td>
+  <td>:</td>
+  <td><input type="text"></td>
+  </tr>
+  <tr>
+  <td style="background-color: rgb(128, 121, 255);">Email</td>
+  <td>:</td>
+  <td><input type="text"></td>
+  </tr>
+  <tr>
+  <td rowspan="2" colspan="2" style="background-color: rgb(217, 255, 0);">Jenis Kelamin :</td>
+  <td><input type="radio" value="Laki Laki" name="Jenis Kelamin">Laki Laki
+  </tr>
+  <tr>
+  <td><input type="radio" value="Perempuan" name="Jenis Kelamin">Perempuan</td>
+
+  </tr>
+  <tr>
+  <td style="background-color: rgb(0, 255, 0);">Golongan</td>
+  <td>:</td>
+  <td><select><option>Darah O</option></select></td>
+  </tr>
+  <tr>
+  <td rowspan="2" style="background-color: green;">Kemampuan</td>
+  <td rowspan="2">:</td>
+  <td ><input type="checkbox"value="Olahraga">Bahasa
+  <input type="checkbox"value="Musik">Olahraga</td>
+  </tr>
+  <tr>
+   <td><input type="checkbox"value="Logika">Fisik
+  <input type="checkbox"value="Bahasa">Agama</td>
+  </tr>
+  <tr>
+  <td rowspan="3" style="background-color: rgb(0, 0, 0); color: white;">Tistimoni</td>
+  <td>:</td>
+  <td rowspan="3"><input type="text"></td>
+  </tr>
+  <tr>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td colspan="3"><center><input type="submit" value="Submit"></center></td>
+  </tr>
+</table>
+<br>
+<table width="100%" border="1">
+  <tr>
+    <td rowspan="2" style="background-color: antiquewhite;">JANUARI</td>
+    <td style="background-color: orange;">TOTAL</td>
+    <td rowspan="2" style="background-color: antiquewhite;">FEBRUARI</td>
+    <td style="background-color: orange;">TOTAL</td>
+    <td colspan="2" style="background-color: green;"><center>KELUAR</center></td>
+    <td rowspan="2" style="background-color: black; color: white;"">TOTAL</td>
+  </tr>
+  <tr>
+    <td>MASUK</td>
+    <td>MASUK</td>
+    <td style="background-color: gray;">JANUARI</td>
+    <td style="background-color: chocolate;">FEBRUARI</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="7"><center><b>Sub Total 1</b></center></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="7"><center><b>Sub Total 2</b></center></td>
+
+  </tr>
+  <tr>
+    <td colspan="6" style="background-color: black; color: white;"><center><b>TOTAL</b></center></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
 </body>
 </html>
